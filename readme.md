@@ -1,8 +1,8 @@
 
-#Réalisation d'un jeu en utilisant la librairie jQuery reprenant les règles du célèbre jeu de Puissance 4.
+Réalisation d'un jeu en utilisant la librairie jQuery reprenant les règles du célèbre jeu de Puissance 4.
 
 
-```javascript
+```php
 🔥 Javascript
 🔥 Librairie JQuery
 🔥 Algorithmie
