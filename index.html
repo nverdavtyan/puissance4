@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> 
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/4c77dcd4e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/board.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>Puissance 4</title>
+</head>
+<body>
+  <button id="reload">Retour au menu</button>
+  <audio autoplay loop src="../assets/song/Assets_Song_game_sound.mp3" class="audio"></audio>
+  <span class="mute"><i class="fas fa-volume-up" aria-hidden="true"></i></span>
+<span class="fullscreen"><i class="fas fa-expand" aria-hidden="true"></i></span>
+<span class="restart"><i class="fa-solid fa-rotate"></i></span>
+
+<div class="pion">
+</div>
+
+
+  <div class="action"><a class="glow-on-hover" href="#">JOUER<span> ►</span></a></div>
+  <span class="cancel"><i class="fas fa-undo"></i></span>
+  <div id="round">
+    <p id="playerRound"></p>
+</div>
+  <div class="play">
+    <h3>Choisissez la taille de votre plateau :</h3>
+    <label for="x">Lignes :</label>
+    <input id="x" name="x" type="number" min="6" max="9" value="6"  />
+    <label for="y">Colonnes :</label>
+    <input id="y" name="y" type="number" min="7" max="10" value="7"  />
+
+
+    <h3>Choisissez le nom du joueur 1 :</h3>
+    <label for="name1"></label>
+    <input type="text" id="name1" name="name1" value="Red" placeholder="Choisissez le nom du joueur 1" />
+    <input type="color" id="color1" value= "#FF0000">
+
+    <h3>Choisissez le nom du joueur 2 :</h3>
+    <label for="name2"></label>
+    <input type="text" id="name2" name="name2" value="Yellow" placeholder="Choisissez le nom du joueur 2"/>
+    <input type="color" id="color2" value="#FFFF00">
+
+
+
+   <button id="play"> Start</button>
+  </div>
+
+
+
+  <div class="container">
+
+    <div class="scorecontainer">
+        <div class="btncontainer">
+          <h2 id="red">Red</h2>
+          <div class="btn" id="redScore">0</div>
+        </div>
+      </div>
+
+ <div id="game"></div>
+
+
+    <div class="scorecontainer">
+      <div class="btncontainer">
+        <h2 id="yellow">Yellow</h2>
+        <div class="btn" id="yellowScore">0</div>
+      </div>
+    </div>
+
+  </div>
+
+ <div class="win">
+        <div class="content">
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+
+ <script src="./js/p4.js"></script>
+
+</body>
+</html>
